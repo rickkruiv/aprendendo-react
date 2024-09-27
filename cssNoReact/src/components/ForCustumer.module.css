@@ -1,0 +1,44 @@
+.customerSection {
+    margin-top: 100px;
+}
+.title {
+    width: 45%;
+    margin: 0 auto;
+    h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+
+    img {
+        flex: 2;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: column;
+        flex: 1;
+        li{
+            list-style: none;
+            text-align: start;
+            
+            h3 {
+                margin-bottom: .5rem;
+            }
+
+            p {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}

@@ -4,11 +4,11 @@ const Fragments = () => {
   return (
     <>
         <div>
-            <h2>Temos dois elementos pau</h2>
+            <h2>Temos dois elementos pai</h2>
         </div>   
         
         <div>
-            <h2>Temos dois elementos pau</h2>
+            <h2>Temos dois elementos pai</h2>
         </div>   
     </>
   )

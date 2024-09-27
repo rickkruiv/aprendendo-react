@@ -1,0 +1,17 @@
+h1 {
+    background: url(https://wallpapercat.com/w/full/e/c/f/4159-3840x2160-desktop-4k-jeep-background.jpg) no-repeat -10px -300px;
+    background-size: cover;
+    font-weight: 700;
+    font-size:  6rem;
+    color: transparent;
+    background-clip: text;
+    text-align: center;
+}
+
+.car-cards {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}

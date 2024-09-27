@@ -7,6 +7,8 @@ import CarDetails from './components/CarDetails';
 import Fragments from './components/Fragments';
 import Container from './components/Container';
 import ExecuteFunction from './components/ExecuteFunction';
+import Message from './components/Message';
+import ChangeMessage from './components/ChangeMessage';
 
 const cars = [
   { 
@@ -51,6 +53,14 @@ const cars = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aperiam dolore nisi sunt reiciendis quas ab deserunt eveniet perferendis, culpa et fugiat eligendi saepe repellendus consequuntur ex omnis odio aut."
   },
   { 
+    id: 2, 
+    brand: "Hyundai", 
+    model: "Azera", 
+    year: 2012, 
+    km: 91960,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aperiam dolore nisi sunt reiciendis quas ab deserunt eveniet perferendis, culpa et fugiat eligendi saepe repellendus consequuntur ex omnis odio aut."
+  },
+  { 
     id: 3, 
     brand: "Subaru", 
     model: "Legacy", 
@@ -62,6 +72,11 @@ const cars = [
 
 function App() {
   const [num, setNum] = useState(0);
+  const [message, setMessage] = useState("");
+
+  const handleMessage = (msg) => {
+    setMessage(msg)
+  }
 
   function showMessage() {
     window.alert("Clicado")
@@ -95,6 +110,9 @@ function App() {
       </Container>
 
       <ExecuteFunction myFunction={showMessage}/>
+
+      <Message msg={message}/>
+      <ChangeMessage handleMessage={handleMessage}/>
     </div>
   )
 }

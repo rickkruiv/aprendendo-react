@@ -1,0 +1,15 @@
+.about-us {
+    width: 900px;
+    margin: 0 auto;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
