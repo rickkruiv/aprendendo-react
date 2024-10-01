@@ -1,0 +1,63 @@
+.forms {
+  margin-top: 1.5rem;
+
+  .form-control,
+  label {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin-bottom: .5rem;
+    font-weight: bold;
+
+    span {
+      margin-bottom: .5rem;
+    }
+  }
+
+  input, textarea, select {
+    resize: vertical;
+    margin-bottom: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    border: 1px solid #000000;
+  }
+
+  .buttons-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    button {
+      flex: 1;
+      padding: .5rem 1rem;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: .2s;
+    }
+
+    .cancel {
+      border: 3px solid #ED4858;
+      background-color: #ED4858;
+      color: #fff;
+    }
+
+    .send {
+      border: 3px solid #CBEAFE;
+      background-color: #CBEAFE;
+      color: #4f4f4f;
+    }
+
+    .send:hover {
+      background-color: #fff;
+      color: #CBEAFE;
+    }
+
+    .cancel:hover {
+      background-color: #fff;
+      color: #ED4858;
+    }
+  }
+}
